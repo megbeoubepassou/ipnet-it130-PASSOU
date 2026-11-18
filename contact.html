@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de contact de mon blog - IT 130">
+    <title>Contact - Mon Blog</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contactez-moi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulaire de Contact</h2>
+            <p>Remplissez ce formulaire pour me contacter. Je vous répondrai dans les plus brefs délais.</p>
+
+            <form>
+                <label for="nom">Ton nom :</label>
+                <input type="text" id="nom" required>
+                <br>
+                <label for="email">Ton email :</label>
+                <input type="email" id="email" required>
+                <br>
+                <label for="telephone">Téléphone (optionnel) :</label>
+                <input type="tel" id="telephone" placeholder="+228 99 99 99 99" pattern="[+0-9 ]{8,20}">
+                <br>
+                <label for="sujet">Sujet :</label>
+                <select id="sujet" required>
+                    <option value="">-- Choisir un sujet --</option>
+                    <option value="question">Question sur le cours</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <br>
+                <label for="message">Ton message :</label>
+                <br>
+                <textarea id="message" rows="5" cols="40" required minlength="10"></textarea>
+                <br>
+                <input type="checkbox" id="rgpd" required>
+                <label for="rgpd">J'accepte d'être recontacté.</label>
+                <br>
+                <input type="checkbox" id="newsletter">
+                <label for="newsletter">Je souhaite recevoir la newsletter (optionnel).</label>
+                <br>
+                <button type="submit">Envoyer</button>
+                <button type="reset">Réinitialiser</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Mon Blog - Créé par Charles Junior</p>
+    </footer>
+</body>
+
+</html>
